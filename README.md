@@ -1,2 +1,45 @@
-# magento-exam-notes
-This is a repository of notes made while studying for the Magento Exam
+# 1. Overview of the Exam
+
+1. Basics                   6%
+2. Request Flow             7%
+3. Rendering                7%
+4. Databases                13%
+5. EAV                      10%
+6. Adminhtml                7%
+7. Catalog                  10%
+8. Checkout                 16%
+9. Sales & Customers        11%
+10. Advanced                13%
+
+
+### 1.2 Structure of the Exam
+
+- 85 Questions
+- 70 Marked
+- 15 Unmarked
+- 37 Pass Rate
+
+
+# 2. Resources
+
+- Magento U Videos
+- Grokking Book [https://shop.vinaikopp.com/grokking-magento/](https://shop.vinaikopp.com/grokking-magento/#!/home)
+- Mage Study Guide by Meanbee [http://magestudyguide.com/](http://magestudyguide.com/)
+- Belvg Blog [http://blog.belvg.com/category/magento-news/developer-certification](http://blog.belvg.com/category/magento-news/developer-certification)
+
+
+# 3. Study Plan
+
+*This is a rough idea on how to study each chapter*
+
+- Watch Magento U Videos
+- Create Answers for each part from:
+
+    - Blogs
+    - Mage Study Guide
+    - Stack Overflow
+
+
+- Do Group Guide Exercises
+- Create Dummy Questions and Answers
+- Revise Notes
