@@ -22,17 +22,17 @@
 
 # 2. Resources
 
-- Magento U Videos
+- Alan Storm No Frills Magento Layout [http://store.pulsestorm.net/products/no-frills-magento-layout](http://store.pulsestorm.net/products/no-frills-magento-layout)
 - Grokking Book [https://shop.vinaikopp.com/grokking-magento/](https://shop.vinaikopp.com/grokking-magento/#!/home)
 - Mage Study Guide by Meanbee [http://magestudyguide.com/](http://magestudyguide.com/)
 - Belvg Blog [http://blog.belvg.com/category/magento-news/developer-certification](http://blog.belvg.com/category/magento-news/developer-certification)
+- Mage Cert [http://magecert.com/](http://magecert.com/)
 
 
 # 3. Study Plan
 
 *This is a rough idea on how to study each chapter*
 
-- Watch Magento U Videos
 - Create Answers for each part from:
 
     - Blogs
