@@ -27,6 +27,11 @@
 - Mage Study Guide by Meanbee [http://magestudyguide.com/](http://magestudyguide.com/)
 - Belvg Blog [http://blog.belvg.com/category/magento-news/developer-certification](http://blog.belvg.com/category/magento-news/developer-certification)
 - Mage Cert [http://magecert.com/](http://magecert.com/)
+- Quizlet Flash Cards [https://quizlet.com/20443995/flashcards](https://quizlet.com/20443995/flashcards)
+- Magentools Online Quiz [http://magento-quiz.magestore.com/](http://magento-quiz.magestore.com/)
+- Magentools Study Answers [http://magentools.com/blog/magento-certification-preparation-study-guide-answers/](http://magentools.com/blog/magento-certification-preparation-study-guide-answers/)
+- Quizlet Study Answers [https://quizlet.com/20443995/magento-certification-preparation-study-guide-answers-flash-cards/](https://quizlet.com/20443995/magento-certification-preparation-study-guide-answers-flash-cards/)
+-
 
 
 # 3. Study Plan
