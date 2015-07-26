@@ -5,7 +5,7 @@ There are 2 ways:
 2. Observer
 
 
-# 1. Web -> Routers 
+# 1. Web -> Routers
 
 *app/etc/code/local/Colin/Request/config.xml*
 

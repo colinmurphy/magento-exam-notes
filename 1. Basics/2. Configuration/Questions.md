@@ -87,7 +87,7 @@ e.g. create app/code/local/Mage/Core/Model/Product.php to override Mage_Catalog_
 This is not recommended but can be done due to the multiple paths used in set_include_path() in app/Mage.php.
 
 
-# 6. Which class types and files have explicit paths?
+### 6. Which class types and files have explicit paths?
 
 Not sure what this means?
 
