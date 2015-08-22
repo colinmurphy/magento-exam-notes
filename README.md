@@ -22,9 +22,16 @@
 
 # 2. Resources
 
-- Alan Storm No Frills Magento Layout [http://store.pulsestorm.net/products/no-frills-magento-layout](http://store.pulsestorm.net/products/no-frills-magento-layout)
-- Grokking Book [https://shop.vinaikopp.com/grokking-magento/](https://shop.vinaikopp.com/grokking-magento/#!/home)
+## 2.1. Books
+
+- No Frills Magento Layout by Alan Storm [http://store.pulsestorm.net/products/no-frills-magento-layout](http://store.pulsestorm.net/products/no-frills-magento-layout)
+- Grokking Book - Book 1: Basics and Request Flow by Vinai Kopp and Ben Marks [https://shop.vinaikopp.com/grokking-magento/](https://shop.vinaikopp.com/grokking-magento/#!/home)
+- Magento Best Practices Handbook by Alessandro Ronchi [https://leanpub.com/magebp](https://leanpub.com/magebp)
+
+## 2.2. Online Resources
+
 - Mage Study Guide by Meanbee [http://magestudyguide.com/](http://magestudyguide.com/)
+
 - Belvg Blog [http://blog.belvg.com/category/magento-news/developer-certification](http://blog.belvg.com/category/magento-news/developer-certification)
 - Mage Cert [http://magecert.com/](http://magecert.com/)
 - Quizlet Flash Cards [https://quizlet.com/20443995/flashcards](https://quizlet.com/20443995/flashcards)
