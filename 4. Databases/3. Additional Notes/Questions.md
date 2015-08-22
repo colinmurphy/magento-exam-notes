@@ -9,4 +9,6 @@
 - How do you register a custom connection
 - How do you override the default_setup connection outside of local.xml file
 - What are the different ways of loading a row with Mage::getModel()
-- 
+- How would you save additional data after a product was saved
+- How do you get Varien_Db_Select in Magento
+- How to make from, where, and, or query in Magento using Varien_Db_Select
