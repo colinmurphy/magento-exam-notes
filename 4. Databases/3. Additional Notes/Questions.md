@@ -19,3 +19,12 @@
 - How do you filter a attribute in a collection
 - How do you order a Collections
 - How do you set a limit for a Collection
+
+# 2. Install/Update Scripts
+
+- What is the name of the method to get Table name for Mage_Core_Model_Resource and Mage_Core_Model_Mysql4_Abstract
+- How do you create a table with a install script
+- How do you start and end a setup script
+- Name the methods which are called for install/upgrade setup and data scripts in the Request Initialization
+- path to install setup script and data script
+- path to upgrade setup script and data script
