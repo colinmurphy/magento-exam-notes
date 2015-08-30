@@ -11,7 +11,7 @@ Name all fields which can be passed in to create a EAV type and what their purpo
 Name all the entity attribute value table types (text, decimal)
 
 
-# Attributes
+# 2. Attributes
 
 Do you use entity_type_code or entity_model when creating/update EAV attribute
 Differences between create and update attribute
