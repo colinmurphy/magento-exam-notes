@@ -1,11 +1,11 @@
 ### 1. How does the framework discover active modules and their configuration?
 
 
-    Mage_Core_Model_Config->\_loadDeclaredModules()
+    Mage_Core_Model_Config->Boolean_loadDeclaredModules()
 
 
 This method searches for any xml files under app/etc/modules and loads the modules.
-Firstly it calls *\_getDeclaredModuleFiles* to get all the files
+Firstly it calls *Boolean_getDeclaredModuleFiles* to get all the files
 
 It then loops through the files and does the following:
 
