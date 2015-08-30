@@ -211,6 +211,7 @@ Varien_Event_Observer
 
 ## How do you register default values for a store in the config.xml
 
+
     <config>
       <stores>
           <default>
@@ -225,7 +226,9 @@ Varien_Event_Observer
           </default>
       </stores>
 
+
 ## How do you register default values for a website in the config.XML
+
 
   <config>
     <websites>
@@ -240,6 +243,7 @@ Varien_Event_Observer
             </design>
         </base>
     </websites>
+
 
 
 # 3. Internationalization
