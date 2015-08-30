@@ -161,8 +161,31 @@ Mage::getModel('colin_database/results')->addAttributeToFilter();
 # 2. Install/Update Scripts
 
 ## What is the name of the method to get Table name for Mage_Core_Model_Resource and Mage_Core_Model_Mysql4_Abstract
+
+- Mage_Core_Model_Resource->getTableName($modelEntity);
+- Mage_Core_Model_Mysql4_Abstract->getTable($entityName);
+
 ## How do you create a table with a install script
+
+$this->addColumn()
+
 ## How do you start and end a setup script
+
+- $this->startSetup()
+- $this->endSetup()
+
 ## Name the methods which are called for install/upgrade setup and data scripts in the Request Initialization
+
+- Mage_Core_Model_Resource::applyAllUpdates();
+- Mage_Core_Model_Resource::applyAllDataUpdates();
+
+
 ## path to install setup script and data script
+
+- data/{setup_name}/data-install-{version}.php
+- sql/{setup_name}/install-{version}.php
+
 ## path to upgrade setup script and data script
+
+- data/{setup_name}/data-upgrade-{old_version}-{new_version}.php
+- sql/{setup_name}/install-{old_version}-{new_version}.php
