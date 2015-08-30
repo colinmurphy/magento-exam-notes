@@ -2,7 +2,7 @@
 
 
 - Module Translation:	CSV in /app/locale
-- Theme Translation:	CSV in /app/design/<area>/<package>/<theme>/locale (theme folder translate)
+- Theme Translation:	CSV in /app/design/{area}/{package}/{theme{}/locale (theme folder translate)
 - Database Translation:	Database (table core_translate)
 
 

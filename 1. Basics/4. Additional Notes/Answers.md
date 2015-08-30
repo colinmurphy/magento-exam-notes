@@ -109,14 +109,14 @@ config/global/models/sales/rewrite/order/
 
 ## How do you register a controller
 
-<config>
-  <frontend>
-    <routers>
-      <colin_basics_router>
-        <use>standard</use>
-        <args>
-          <module>Colin_Basics</module>
-          <frontName>football</frontName>
+    <config>
+      <frontend>
+        <routers>
+          <colin_basics_router>
+            <use>standard</use>
+            <args>
+              <module>Colin_Basics</module>
+              <frontName>football</frontName>
 
 ## How do you rewrite the catalog controller
 
@@ -159,18 +159,18 @@ Two Parts:
 
 2. Register Observer
 
-<global>
-    <events>
-        <catalog_product_get_final_price>
-            <observers>
-                <colin_duplicate_price>
-                    <type>singleton</type>
-                    <class>Colin_Bootstrap_Model_Observer_Price</class>
-                    <method>duplicateFinalPrice</method>
-                </colin_duplicate_price>
-            </observers>
-        </catalog_product_get_final_price>
-    </events>
+    <global>
+        <events>
+            <catalog_product_get_final_price>
+                <observers>
+                    <colin_duplicate_price>
+                        <type>singleton</type>
+                        <class>Colin_Bootstrap_Model_Observer_Price</class>
+                        <method>duplicateFinalPrice</method>
+                    </colin_duplicate_price>
+                </observers>
+            </catalog_product_get_final_price>
+        </events>
 
 ## Name the observer class
 
