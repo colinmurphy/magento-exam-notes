@@ -101,11 +101,14 @@ config/global/models/sales/rewrite/order/
         </models>
       </global>
 
+## What is the xpath for a rewrite for Mage_Page_Block_Html_Head
+
+config/global/blocks/page/html_head/
 
 ## When a factory file is not found, where is the last place the method checks e.g. Mage::getModel('basics/html_head')
 
+Mage_Basics_Html_Head
 
-  Mage_Basics_Html_Head
 
 ## How do you register a controller
 
@@ -244,9 +247,36 @@ Varien_Event_Observer
         </base>
     </websites>
 
+## How do you get an instance of a block
+
+Mage::getBlockSingleton()
+Mage::app->getLayout()->createBlock()->toHtml();
+
+## Difference between getModel and getSingleton
+
+getSingleton only load a module once
+
+## How do you get version of Magento
+
+Mage::getVersionInfo()
+Mage::getVersion();
+
+## How do you register a variable
+
+Mage::register();
+
+## What is Mage::registry used for
+
+To store classes with a singleton pattern.
+
 
 
 # 3. Internationalization
+
+## What is the class for translations
+
+Mage_Core_Model_Translate
+
 
 ## Name the different type of translations
 
@@ -256,9 +286,12 @@ Inline Translations: stored in core_translate table
 
 ## What is the order of translations being loaded
 
-1. Inline
+1. Module
 2. Theme
-3. Module
+3. Inline/Database
+
+Meaning that Database is most highest priority.
+
 
 
 ## How does developer mode affect translations
