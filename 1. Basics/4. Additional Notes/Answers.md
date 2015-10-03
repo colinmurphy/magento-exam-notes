@@ -157,23 +157,27 @@ Two Parts:
 
 1. Dispatch Event
 
-  Mage::dispatchEvent('name', array $args);
-  Mage::dispatchEvent('catalog_product_get_final_price', array('product' => $product, 'qty' => $qty));
+
+    Mage::dispatchEvent('name', array $args);
+    Mage::dispatchEvent('catalog_product_get_final_price', array('product' => $product, 'qty' => $qty));
+
 
 2. Register Observer
 
-    <global>
-        <events>
-            <catalog_product_get_final_price>
-                <observers>
-                    <colin_duplicate_price>
-                        <type>singleton</type>
-                        <class>Colin_Bootstrap_Model_Observer_Price</class>
-                        <method>duplicateFinalPrice</method>
-                    </colin_duplicate_price>
-                </observers>
-            </catalog_product_get_final_price>
-        </events>
+
+      <global>
+          <events>
+              <catalog_product_get_final_price>
+                  <observers>
+                      <colin_duplicate_price>
+                          <type>singleton</type>
+                          <class>Colin_Bootstrap_Model_Observer_Price</class>
+                          <method>duplicateFinalPrice</method>
+                      </colin_duplicate_price>
+                  </observers>
+              </catalog_product_get_final_price>
+          </events>
+
 
 ## Name the observer class
 
