@@ -237,19 +237,19 @@ Varien_Event_Observer
 ## How do you register default values for a website in the config.XML
 
 
-  <config>
-    <websites>
-        <base>
-            <design>
-                <package>
-                    <name>default</name>
-                </package>
-                <theme>
-                    <default>modern</default>
-                </theme>
-            </design>
-        </base>
-    </websites>
+    <config>
+      <websites>
+          <base>
+              <design>
+                  <package>
+                      <name>default</name>
+                  </package>
+                  <theme>
+                      <default>modern</default>
+                  </theme>
+              </design>
+          </base>
+      </websites>
 
 ## How do you get an instance of a block
 
@@ -294,8 +294,7 @@ Inline Translations: stored in core_translate table
 2. Theme
 3. Inline/Database
 
-Meaning that Database is most highest priority.
-
+Meaning that Database is the highest priority.
 
 
 ## How does developer mode affect translations
