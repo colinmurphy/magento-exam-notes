@@ -38,6 +38,7 @@
 - Magentools Online Quiz [http://magento-quiz.magestore.com/](http://magento-quiz.magestore.com/)
 - Magentools Study Answers [http://magentools.com/blog/magento-certification-preparation-study-guide-answers/](http://magentools.com/blog/magento-certification-preparation-study-guide-answers/)
 - Quizlet Study Answers [https://quizlet.com/20443995/magento-certification-preparation-study-guide-answers-flash-cards/](https://quizlet.com/20443995/magento-certification-preparation-study-guide-answers-flash-cards/)
+- Division Lab [http://www.divisionlab.com/solvingmagento/](http://www.divisionlab.com/solvingmagento/)
 
 
 # 3. Study Plan
