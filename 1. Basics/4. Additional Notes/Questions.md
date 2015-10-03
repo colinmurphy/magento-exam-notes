@@ -39,3 +39,4 @@
 - Name the different type of translations
 - What is the order of translations being loaded
 - How does developer mode affect translations
+- How does a module add a translation file

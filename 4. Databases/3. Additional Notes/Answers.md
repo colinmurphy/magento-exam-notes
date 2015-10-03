@@ -112,7 +112,7 @@ Add a local_dev.xml to app/etc directory and set "default_setup" use param to a 
               <host><![CDATA[127.0.0.1]]></host>
               <username><![CDATA[root]]></username>
               <password><![CDATA[root]]></password>
-              <dbname><![CDATA[mag_hickeys]]></dbname>
+              <dbname><![CDATA[mag_exam]]></dbname>
               <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
               <model><![CDATA[mysql4]]></model>
               <type><![CDATA[pdo_mysql]]></type>

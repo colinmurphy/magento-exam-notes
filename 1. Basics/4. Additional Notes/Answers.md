@@ -300,3 +300,17 @@ Meaning that Database is the highest priority.
 ## How does developer mode affect translations
 
 When turned on it prevents us using translations of other modules.
+
+
+## How does a module add a translation file
+
+
+    <translate>
+        <modules>
+            <Mage_Core>
+                <files>
+                    <default>Mage_Core.csv</default>
+                </files>
+            </Mage_Core>
+        </modules>
+    </translate>
