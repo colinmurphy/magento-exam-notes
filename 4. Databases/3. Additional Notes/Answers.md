@@ -134,6 +134,34 @@ Add a local_dev.xml to app/etc directory and set "default_setup" use param to a 
 
 Using the observer model_after_save.
 
+    <global>
+        <events>          
+            <catalog_product_save_after>
+                <observers>
+                    <mymodule>
+                        <type>singleton</type>
+                        <class>mymodule/observer</class>
+                        <method>catalog_product_save_after</method>
+                    </mymodule>
+                </observers>
+            </catalog_product_save_after>
+
+
+
+        public function catalog_product_save_after($observer)
+        {
+            $product = $observer->getProduct();
+            if(!$product->getMetaTitle()){
+                $name = $product->getName();           
+                $metaTitle = str_replace(' - ', ' ', $name);
+                $product->setMetaTitle($metaTitle);
+                $product->getResource()->saveAttribute($product, 'meta_title');
+            }
+        }
+
+
+
+
 ## How do you get Varien_Db_Select in Magento
 
     Mage::getModel('core/resource')->getConnection('core_read')->select();
