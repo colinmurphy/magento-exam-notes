@@ -41,4 +41,21 @@
 
 # 5. Payment Methods
 
+- What is the xpath for a payment method
+- What are the configuration options for a method
+- What class does a payment method extend from and what methods are required
+- How would you add and validate custom data
+- How would you enable logging for debugData
+- What property would you set to capture the full credit card number
+- What property would you set to prevent refunds
+- What properties would you set to authorize and capture
+- What property would you use to prevent Multishipping
+- What property would you use to prevent use in admin
+
 # 6. Multishipping
+
+- How does the storage of quotes for multishipping and onepage checkouts differ?
+- Which quotes in a multishipping checkout flow will be virtual?
+- How can different product types be split among multiple addresses when using multishipping in Magento?
+- How many times are total models executed on a multishipping checkout in Magento?
+- Which model is responsible for multishipping checkout in Magento?

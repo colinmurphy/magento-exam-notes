@@ -125,3 +125,103 @@ Cart applies rule to quote whereas price rules apply to products in the cart.
 1. Only 1 voucher can be applied at once but multiple rules can be applied.
 2. Rules cannot rely on each other
 3. For admin area orders, shopping cart price rules can be disabled on specific items but they are always applied on all items in the frontend.
+
+
+# 4. Shipping Methods
+
+
+## How do you register a shipping method
+
+1. config under default/carrier
+2. class extends Mage_
+
+## What parameters are for a shipping method
+
+## What abstract class and interface does a shipping method use
+
+## What methods are required for a shipping method and also what property should be set
+
+## How do you set shipping methods
+
+## How do you set the rate
+
+## What should be added to a Mage_Shipping_Model_Rate_Result_Method
+
+
+# 5. Payment Methods
+
+
+## What is the xpath for a payment method
+
+config/default/payment/{{name}}
+
+## What are the configuration options for a method
+
+1. active
+2. model
+3. order_status
+4. title
+5. payment_action
+6. debug
+
+
+## What class does a payment method extend from and what methods are required
+
+Mage_Payment_Model_Method_Abstract and no methods required but properties can be set to configure model.
+
+
+## How would you add and validate custom data
+
+1. Add custom block with extends Mage_Payment_Block_Form
+2. Add a method assignData and $this->getInfoInstance()->set{{name}}($data->{{name}});
+3. Add a method validate and throw an exception if it fails
+
+## How would you enable logging for debugData
+
+Set debug to 1/true
+
+## What property would you set to capture the full credit card number
+
+
+## What property would you set to prevent refunds
+
+$_canRefund = false
+
+## What properties would you set to authorize and capture
+
+$_canCapture = true and $_canAuthorize = true
+
+## What property would you use to prevent Multishipping
+
+$_canUseForMultishipping = false
+
+## What property would you use to prevent use in admin
+
+$_canUseInternal = false
+
+# 6. Multishipping
+
+
+## How does the storage of quotes for multishipping and onepage checkouts differ?
+
+Quote Items are stored in **flat_sales_quote_address_item**.
+
+## Which quotes in a multishipping checkout flow will be virtual?
+
+Virtual Products will be added to **flat_sales_quote_address_item** but it does not have a shipping address. Instead the item is added to the billing address.
+
+## How can different product types be split among multiple addresses when using multishipping in Magento?
+
+The items are added to flat_sales_quote_address_item and then they set a parent address id which is based in flat_sales_quote_address table.
+
+## How many times are total models executed on a multishipping checkout in Magento?
+
+For each address.
+
+## Which model is responsible for multishipping checkout in Magento?
+
+
+| One Page Checkout     | Multi Shipping     |
+| :------------- | :------------- |
+| Mage_Checkout_OnepageController | Mage_Checkout_MultishippingController |
+| Mage_Checkout_Model_Type_Onepage | Mage_Checkout_Model_Type_Mulitishipping |
