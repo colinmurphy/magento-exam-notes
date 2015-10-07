@@ -182,6 +182,7 @@ Set debug to 1/true
 
 ## What property would you set to capture the full credit card number
 
+$_canSaveCc = false;
 
 ## What property would you set to prevent refunds
 
