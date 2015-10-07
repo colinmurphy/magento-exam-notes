@@ -92,3 +92,80 @@ Processing.
 ## If an order is complete, can it be refunded (credit memo)
 
 No. If the order has been shipped it can't be refunded.
+
+# Card Authorization and Capture
+
+## Which class is responsible for capturing funds
+
+The payment method which is called by the invoice class
+
+## When are invoices created
+
+When an order is billed or in admin.
+
+## What class is the payment class
+
+Mage_Sales_Model_Order_Payment
+
+## Whats the difference between authorize and capture
+
+1. Authorize - It checks the funds and informs the payment service to block those funds from being used.
+2. Capture - This captures the funds.
+
+## What are the different types of captures
+
+Online & Offline Capture.
+
+## How would a custom payment gateway authorize and capture funds
+
+Using the methods authorize and capture providing their properties have been set to true.
+
+
+# 5. Credit Memos
+
+
+# What state is an order set to after being refunded
+
+Closed.
+
+# When can an order not be refunded?
+
+When the order is complete and the payment method does not allow refunds.
+
+# How does Magento process taxes when refunding an order?
+
+It basis it off admin tax origin.
+
+# How does Magento process shipping fees when refunding an order?
+
+Handled by the Credit Memo model when calculating different totals.
+
+# What is the difference between online and offline refunding?
+
+Offline refunds refund the order on Magento without actually taking care of the refund transaction. Whereas online does both.
+
+# What is the role of the credit memo total models in Magento?
+
+Credit memo totals keep a track on how much is refunded per total.
+
+# 6. Cancelled Orders
+
+## When can an order be cancelled
+
+1. Payment method allows for the order to be void e.g. the property *$_canVoid*
+2. If all items have not been invoiced
+3. If the order is not cancelled, complete or closed
+4. Or if the order is not already flagged as cancelled
+
+
+# 7. Partial Order Operations
+
+## What are the different types
+
+1. Order
+2. Invoice
+3. Shipping
+
+## How do they affect the state of an order
+
+They set the order state to processing.
