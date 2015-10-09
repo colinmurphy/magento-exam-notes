@@ -44,13 +44,13 @@ State is an internal state for Magento which can have multiple statuses
 
 Answer from [http://magento.stackexchange.com/a/516/6617](http://magento.stackexchange.com/a/516/6617)
 
-**Pending:** Pending orders are brand new orders that have not been processed. Typically, these orders need to be invoiced and shipped.
-**Pending PayPal:** Pending PayPal orders are brand new orders that have not been cleared by PayPal. [...]
-**Processing:** Processing means that orders have either been invoiced or shipped, but not both.
-**Complete:** Orders marked as complete have been invoiced and have shipped.
-**Cancelled:** Cancelled orders should be used if orders are cancelled or if the orders have not been paid for.
-**Closed:** Closed orders are orders that have had a credit memo assigned to it and the customer has been refunded for their order.
-**On Hold:** Orders placed on hold must be taken off hold before continuing any further actions.  
+- **Pending:** Pending orders are brand new orders that have not been processed. Typically, these orders need to be invoiced and shipped.
+- **Pending PayPal:** Pending PayPal orders are brand new orders that have not been cleared by PayPal. [...]
+- **Processing:** Processing means that orders have either been invoiced or shipped, but not both.
+- **Complete:** Orders marked as complete have been invoiced and have shipped.
+- **Cancelled:** Cancelled orders should be used if orders are cancelled or if the orders have not been paid for.
+- **Closed:** Closed orders are orders that have had a credit memo assigned to it and the customer has been refunded for their order.
+- **On Hold:** Orders placed on hold must be taken off hold before continuing any further actions.  
 
 ## List all the states in order
 
@@ -65,20 +65,21 @@ Answer from [http://magento.stackexchange.com/a/516/6617](http://magento.stackex
 
 ## How do you add your own state
 
-<global>
-  <sales>
-    <order>
-      <states>
-        <new_state>
-          <label>New State</label>
-          <description>This is a state description</state>
-          <statues>
-            <pending default="1" />
-            <pending_paypal />
-          </statues>
-          <visible_on_front>1</visible_on_front>
-        </new_state>
-      </states>
+
+  <global>
+    <sales>
+      <order>
+        <states>
+          <new_state>
+            <label>New State</label>
+            <description>This is a state description</state>
+            <status>
+              <pending default="1" />
+              <pending_paypal />
+            </status>
+            <visible_on_front>1</visible_on_front>
+          </new_state>
+        </states>
 
 
 ## When would an order be closed
@@ -91,7 +92,8 @@ Processing.
 
 ## If an order is complete, can it be refunded (credit memo)
 
-No. If the order has been shipped it can't be refunded.
+No. If the order has been completed, it can't be refunded.
+Can also depend on payment method allowing refunds.
 
 # Card Authorization and Capture
 
