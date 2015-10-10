@@ -159,7 +159,6 @@ Credit memo totals keep a track on how much is refunded per total.
 3. If the order is not cancelled, complete or closed
 4. Or if the order is not already flagged as cancelled
 
-
 # 7. Partial Order Operations
 
 ## What are the different types
