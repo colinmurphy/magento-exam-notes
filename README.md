@@ -1,3 +1,10 @@
+# Overview
+
+These are notes I compiled while studying for the Magento Certified Developer Exam.
+
+There will be not much updates to these notes but if you spot anything that is wrong or misspelled or if you feel you can contribute please make a pull request and I will review the commit.
+
+
 # 1. Overview of the Exam
 
 1. Basics                   6%
@@ -14,10 +21,12 @@
 
 ### 1.2 Structure of the Exam
 
-- 85 Questions
+- 72 Questions
 - 70 Marked
 - 15 Unmarked
 - 37 Pass Rate
+
+**Note:** Magento states there are 85 questions and 70 marked but when I undertook the exam it was 72 questions with 70 marked.
 
 
 # 2. Resources
