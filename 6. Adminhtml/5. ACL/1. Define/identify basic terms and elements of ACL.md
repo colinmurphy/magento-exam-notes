@@ -109,8 +109,8 @@ This is checked in the observer **Mage_Adminhtml_Controller_Action->preDispatch*
 
     if ($this->getRequest()->isDispatched()
         && $this->getRequest()->getActionName() !== 'denied'
-        && !$this->\_isAllowed()) {
-        $this->\_forward('denied');
+        && !$this->_isAllowed()) {
+        $this->_forward('denied');
         $this->setFlag('', self::FLAG_NO_DISPATCH, true);
         return $this;
     }
@@ -119,7 +119,7 @@ The *_isAllowed* method is set to true but is overridden by the controller.
 
 So in our index controller we add the following:
 
-      protected function \_isAllowed()
+      protected function _isAllowed()
       {
           Mage::getSingleton('admin/session')->isAllowed('colin_slider/slider');
       }
