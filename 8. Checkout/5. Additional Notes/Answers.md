@@ -86,8 +86,8 @@ Mage_Sales_Model_Quote_Address()->collectTotals() calls the class Mage_Sales_Mod
 
 Using the collect method and using *_addAmount* and *_addBaseAmount* methods.
 
-    $this->\_addAmount($price);
-    $this->\_addBaseAmount($price);
+    $this->_addAmount($price);
+    $this->_addBaseAmount($price);
 
 
 ## How do you display a custom total
